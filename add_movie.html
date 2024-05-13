@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movie</title>
+</head>
+<body>
+    <h1>Add Movie</h1>
+    <form action="/add_movie" method="POST">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="genre">Genre:</label><br>
+        <input type="text" id="genre" name="genre" required><br><br>
+
+        <label for="actors">Actors:</label><br>
+        <input type="text" id="actors" name="actors" required><br><br>
+
+        <label for="publication_year">Publication Year</label><br>
+        <input type="text" id="publication_year" name="publication_year" required><br><br>
+
+        
+        <input type="submit" value="Add Movie">
+    </form>
+</body>
+</html>

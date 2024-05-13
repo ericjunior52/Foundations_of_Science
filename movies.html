@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+</head>
+<body>
+    <h1>Movie List</h1>
+    <ul>
+        {% for movie in movies %}
+
+        <li>
+            <strong>Title:</strong> {{ movie.title }} <br>
+            <strong>Genre:</strong> {{ movie.genre }} <br>
+            <strong>Actors:</strong>{{ movie.actors }} <br>
+            <strong>Publication Year</strong>{{ movie.publication_year }} <br><br>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
